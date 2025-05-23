@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      positions practice
+    </title>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top:60px;
+    padding-left: 80px;">
+
+    <!-- position sticks stuff above other stuff even wnhen you scroll and top means how far it is from the top of the browser
+    z-index means what shows up on top, by default its 0 ..absolute in fixed element becomes relative to the fixed element
+    -->
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      z-index: 100;
+      ">
+      header</div>
+    
+    <div style="
+      background-color: lightgreen;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;">
+        sidebar
+
+
+      <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top: 0px;
+        right: 0px;
+        ">
+     x
+      </div>
+    </div>
+
+    <!-- postion fixed means its fixed on the browser window but position absolute is fixed on the page so when you scroll, it moves-->
+    <div style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          top: 60px;
+          right: 10px;
+          ">
+      absolute
+    </div>
+   
+   <div style=" 
+      background-color: lightpink;
+      height:200px;
+      width: 200px;
+      position: static;">
+      div1
+    </div>
+
+  <!-- 
+  position absolute inside relative follows the relative  
+  -->
+    <div
+      style="background-color: lightblue;
+      height:200px;
+      width: 200px;
+      position: relative;">
+      div2
+
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px;
+        ">
+      5:00
+      </div>
+    </div>
+    
+  </body>
+</html>
